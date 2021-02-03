@@ -1,3 +1,8 @@
+* block, inline-block, inline
+  - block: separate line
+  - inline-block: same line separate blocks
+  - inline: same line no blocks
+
 ### Using fonts
   * Quotes go around font family in CSS declarations
     - font-family: "Gotham Rounded";
@@ -92,10 +97,43 @@ body {
     - how often the image repeats y-axis, x-axis, no-repeat
   * background shorthand
     - ``` background: url(.../img/bear.jpg) center / cover no-repeat #454959; ```
-    - 
+
   * Blend-modes
     - https://css-tricks.com/almanac/properties/b/background-blend-mode/
     - Not part of the background shorthand, needs to be specified separately
     - background-blend-mode
     - blends your background picture with a color, it's awesome
-  
+
+#### Gradients
+  * linear
+    - to top
+    - to bottom
+    - to left
+    - to right
+    - angle parameters: starts at bottom ```(0deg, orange, papayawhip)```
+  * radial
+    - don't have to start at center, ```(center at top right, orange, papayawhip)```
+  * ```background-image: radial-gradient(orange, papayawhip);```
+  * Written in background image because technically the gradient is an img created by the CSS
+  ##### Color Stops
+  * adding another color in the gradient ```(orange, firebrick, papayawhip)```
+    - use % values after each color stop to control where the changes occur
+    ```(#b40 0%, #d63 50%, #c51 51%, #e74 100%)```
+    - creates shine with the drastic color stop (change) between 50 and 51%
+    - use rgba colors to create opacity
+
+#### Vertical Spacing
+  ```
+  section {
+    padding: 4rem 0;
+    border-bottom: 1px dashed grey;
+  }
+  ```
+
+  * This creates space in between each section of the page so the user can clearly see where content ends and starts
+  * And adds a slight border
+
+
+#### calc()
+  * https://developer.mozilla.org/en-US/docs/Web/CSS/calc()
+  * good for two side by side columns
