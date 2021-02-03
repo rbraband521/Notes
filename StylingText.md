@@ -50,3 +50,28 @@ body {
 ```
 #### letter-spacing
   - It's self explanatory, just keep it in mind
+
+#### text-align
+  - left, right, center, justify
+  * Center
+    - Works best for shorter headers
+  * Justify
+    - Adjusted so the space on either side is equal/probably avoid
+
+
+#### HYPHENS
+  * Good practice to set `hyphens: auto;` in the main section so words are hyphenated at the end of a line instead of cutoff
+
+#### text-shadow
+  * horizontal offset, vertical offset, blur, color
+  ``` -10px 5px 0 blue; ```
+  * You can stack shadows on top of each other, they are read in order
+  * rgba color value will allow you to use opacity (red, green, blue, opacity)
+
+#### box-shadow
+  * same as text shadow except it has a fourth value to control the spread of the shadow
+  * the INSET keyword creates the shadow inside the box
+
+#### border-radius
+  * makes rounded edges
+  * can also be consolidated into one declaration
