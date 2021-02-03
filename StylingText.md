@@ -1,4 +1,5 @@
-* Quotes go around font family in CSS declarations
+### Using fonts
+  * Quotes go around font family in CSS declarations
     - font-family: "Gotham Rounded";
     - always create a font stack, incase one isn't installed on the users computer
 
@@ -75,3 +76,26 @@ body {
 #### border-radius
   * makes rounded edges
   * can also be consolidated into one declaration
+   - first value is the top left
+   - horizontal/vertical
+
+#### Adding using CSS
+  * Adding content with CSS means it will be ignored by a screen reader
+  * Not everything on a webpage is funcitonal content
+  * If something is purely decorational, it probably doesn't need to be read by a screen reader
+  * Text added this way cannot be selected with the mouse
+  * https://css-tricks.com/almanac/selectors/a/after-and-before/
+
+#### Background images
+  * position
+  * reapeat
+    - how often the image repeats y-axis, x-axis, no-repeat
+  * background shorthand
+    - ``` background: url(.../img/bear.jpg) center / cover no-repeat #454959; ```
+    - 
+  * Blend-modes
+    - https://css-tricks.com/almanac/properties/b/background-blend-mode/
+    - Not part of the background shorthand, needs to be specified separately
+    - background-blend-mode
+    - blends your background picture with a color, it's awesome
+  
